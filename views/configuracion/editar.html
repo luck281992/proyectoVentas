@@ -1,0 +1,44 @@
+<form class="form-horizontal" id ="configuracion" method="post" >
+        <div class="panel panel-primary">
+                        <div class="panel-heading" >
+                                <h4>Modificar Configuracion General</h4>
+                        </div>
+                 <div class="panel-body">
+                                <div class="form-group has-success has-feedback">
+					<input type="text" hidden class ="id_configuracion"/>
+                                        <label class="control-label col-sm-3" for="inputGroupSuccess1">Tasa de financiamiento</label>
+                                    <div class="col-sm-4">
+                                                <input type="text" class="form-control" id="tasa_financiamiento" name = "tasa_financiamiento" aria-describedby="inputSuccess1Status">
+                                         <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                      <span id="inputSuccess3Status" class="sr-only">(success)</span>
+                                        </div>
+                                </div>
+                                <div class="form-group has-success has-feedback">
+                                        <label class="control-label col-sm-3" for="inputGroupSuccess2">Tasa de enganche</label>
+                                    <div class="col-sm-4">
+                                                <input type="text" id="enganche" name="porcentaje_enganche" class="form-control" aria-describedby="inputSuccess3Status" />
+                                                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                      <span id="inputSuccess3Status" class="sr-only">(success)</span>
+                                        </div>
+                                </div>
+                                <div class="form-group has-success has-feedback">
+                                        <label class="control-label col-sm-3" for="inputGroupSuccess3">Plazo</label>
+                                    <div class="col-sm-4">
+                                                <input type="text" id="plazo" class="form-control"aria-describedby="inputSuccess3Status" name="plazo"/>
+                                                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                      <span id="inputSuccess3Status" class="sr-only">(success)</span>
+                                        </div>
+                                </div>
+
+                                <div class="form-group has-success has-feedback">
+                                        <div class="col-sm-2">
+                                                <input type="button" value="guardar" id="editar_configuracion" name ="editar_configuracion" class="btn btn-primary" />
+                                        </div>
+
+                                        <div class="col-sm-2">
+                                                <input type="button" value="cancelar" id="cancelar_configuracion" name ="cancelar_configuracion" class="btn btn-primary" />
+                                        </div>
+                            </div>
+                </div>
+        </div>
+</from>

@@ -1,0 +1,53 @@
+<form class="form-horizontal" method="post" id ="articulos">
+	<div class="panel panel-primary">
+				<div class="panel-heading" >
+					<h4>Modificar Articulos</h4>
+				</div>
+			 <div class="panel-body">
+			 	<div style ="float: right">CLAVE: <span id ="codigo"></span></div>
+				<div class="form-group has-success has-feedback">
+							<label class="control-label col-sm-3" for="inputGroupSuccess1">Descripcion</label>
+						    <div class="col-sm-4">
+								<input type="text" class="form-control" id="descripcion" name = "descripcion" aria-describedby="inputSuccess1Status">
+							 <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+						      <span id="inputSuccess3Status" class="sr-only">(success)</span>
+							</div>
+						</div>
+						<div class="form-group has-success has-feedback">
+							<label class="control-label col-sm-3" for="inputGroupSuccess2">Modelo</label>
+						    <div class="col-sm-4">
+								<input type="text" id="modelo" name="modelo" class="form-control" aria-describedby="inputSuccess3Status" />
+								<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+						      <span id="inputSuccess3Status" class="sr-only">(success)</span>
+							</div>
+						</div>
+						<div class="form-group has-success has-feedback">
+							<label class="control-label col-sm-3" for="inputGroupSuccess3">Precio</label>
+						    <div class="col-sm-4">
+								<input type="text" id="precio" class="form-control"aria-describedby="inputSuccess3Status" name="precio"/>
+								<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+						      <span id="inputSuccess3Status" class="sr-only">(success)</span>
+							</div>
+						</div>
+						<div class="form-group has-success has-feedback">
+							<label class="control-label col-sm-3" for="inputGroupSuccess3">Existencia</label>
+						    <div class="col-sm-4">
+								<input type="text" id="existencia" class="form-control"aria-describedby="inputSuccess3Status" name="existencia"/>
+								<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+						      <span id="inputSuccess3Status" class="sr-only">(success)</span>
+							</div>
+						</div>
+
+
+			</div>
+	   </div>
+
+	   	<div class="col-sm-2">
+							<input type="button" value="guardar" id="editar_articulos" name ="editar_articulos" class="btn btn-primary" />
+						</div>
+					
+						<div class="col-sm-2">
+							<input type="button" value="cancelar" id="cancelar_articulos" name ="cancelar_articulos" class="btn btn-primary" />
+						</div>
+					</div>
+</form>
