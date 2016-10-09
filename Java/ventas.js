@@ -13,7 +13,7 @@ var registro_configuracion = FuncionesGeneral.Consultar("configuracion");
 for(indice in registro_configuracion){
   configuracion[indice] = registro_configuracion[indice]; 
 }
-FuncionesGeneral.template(Modulo,Funcionalidad.consultar_venta,"#consultar");       
+FuncionesGeneral.template(Modulo,Funcionalidad.consultar_venta,"#consultar");
 $("#agregar_"+Modulo).hide();
    // FuncionesGeneral.ActualizaFolio(Modulo,"folio");
   var registros = Venta.ConsultarVenta(Modulo);
@@ -193,6 +193,10 @@ $("#agregar_"+Modulo).hide();
 
     $(document).on("click","#nuevo_"+Modulo,function(event){
         //var registros = FuncionesGeneral.Consultar(Modulo);
+        if(registro_configuracion.length == 0){
+          alert("Es necesario que agregue una configuracion");
+          return;
+        }
         FuncionesGeneral.template(Modulo,Funcionalidad.agregar,"#agregar");
         FuncionesGeneral.template(Modulo,Funcionalidad.busqueda,"#busqueda");
         FuncionesGeneral.template(Modulo,Funcionalidad.consultar_articulos,"#agregar_producto");

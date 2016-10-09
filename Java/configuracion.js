@@ -26,11 +26,14 @@ $( document ).ready(function() {
              var registros = FuncionesGeneral.Consultar(Modulo);   
              if(ValidarExistenciaConfiguracion(registros)){
               if(!confirm("Ya tiene capturada una configuracion")){
+                var registros = FuncionesGeneral.Consultar(Modulo);
+                 FuncionesGeneral.CargarDatos(Modulo,registros);
                  FuncionesGeneral.Regresar(Modulo);
               }
             }else{
                FuncionesGeneral.template(Modulo,Funcionalidad.consultar,"#consultar");
                FuncionesGeneral.InsertarRegistro(Modulo,data);
+               var registros = FuncionesGeneral.Consultar(Modulo);
                FuncionesGeneral.CargarDatos(Modulo,registros);
                FuncionesGeneral.Regresar(Modulo);
             }
